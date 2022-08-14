@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/main.css" media="all"/>
+</head>
+<body>
+	<div id="about" class="about rounded">
+		<div id="about-title">
+			LOREM IPSUM GENERATOR
+		</div>
+		<div id="about-info">
+			version: <span id="about-version">...</span><br>
+			<span id="about-email"></span>
+		</div>
+		<button id="close-about-btn">close</button>
+	</div>
+
+	<div id="dataline">
+		<b>NUMBER OF PARAGRAPHS:</b> <input type="number" id="paragraphs" name="paragraphs" min="1" max="64" value="5">
+		<button id="generate-btn">generate</button>
+		<button id="reset-btn" disabled>reset</button>
+		<button id="copy-btn" disabled>copy to clipboard</button>
+		<button id="about-btn">about</button>
+	</div>
+
+	<div id="app"></div>
+
+	<script src="../script/renderer.js"></script>
+</body>
+</html>

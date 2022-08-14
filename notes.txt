@@ -1,0 +1,13 @@
+# packages:
+electron-squirrel-startup
+electron
+electron-builder
+@electron-forge/cli
+@electron-forge/maker-deb
+@electron-forge/maker-rpm
+@electron-forge/maker-squirrel
+@electron-forge/maker-zip
+
+# build:
+npm run build-installer
+npx electron-builder build --win portable

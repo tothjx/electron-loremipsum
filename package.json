@@ -1,0 +1,50 @@
+{
+	"name": "li-gen",
+	"productName": "Lorem ipsum generator",
+	"version": "1.0.1",
+	"description": "another lorem ipsum generator",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make",
+		"publish": "electron-forge publish",
+		"lint": "echo \"No linting configured\"",
+		"build-installer": "electron-builder"
+	},
+	"author": {
+		"name": "tothj",
+		"email": "tothj@tothj.com"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"electron-squirrel-startup": "^1.0.0"
+	},
+	"build": {
+		"appId": "liGen",
+		"win": {
+			"target": [
+				"nsis"
+			],
+			"icon": "img/icon.ico"
+		},
+		"nsis": {
+			"installerIcon": "img/icon.ico",
+			"uninstallerIcon": "img/icon.ico",
+			"uninstallDisplayName": "Lorem ipsum generator",
+			"license": "license.txt",
+			"oneClick": false,
+			"allowToChangeInstallationDirectory": true
+		}
+	},
+	"keywords": [],
+	"devDependencies": {
+		"@electron-forge/cli": "^6.0.0-beta.59",
+		"@electron-forge/maker-deb": "^6.0.0-beta.59",
+		"@electron-forge/maker-rpm": "^6.0.0-beta.59",
+		"@electron-forge/maker-squirrel": "^6.0.0-beta.59",
+		"@electron-forge/maker-zip": "^6.0.0-beta.59",
+		"electron": "^20.0.2",
+		"electron-builder": "^22.11.7"
+	}
+}
