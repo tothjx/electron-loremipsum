@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+
+$color-pastel-red: rgb(255, 208, 208);
+$color-pastel-green: rgb(208, 240, 208); 
+$color-pastel-blue: rgb(208, 240, 255);
+$color-pastel-gray: rgb(240, 240, 240);
+$color-pastel-yellow: rgb(255, 240, 208);
+$light-gray: rgb(224, 224, 224);
+$dark-gray: rgb(96, 96, 96);
+$custom-blue: rgb(64, 96, 128);
+$radius: 5px;
+
+* {
+	font-family: Tahoma, sans-serif;
+	box-sizing: border-box;
+	font-size: 8pt;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+
+body {
+	background-color: $color-pastel-gray;
+	padding: 0px;
+}
+
+a {
+	color:black;
+
+	&:active,
+	&:link,
+	&:visited {
+		color:black;
+	}
+
+	&:hover {
+		color:orangered;
+	}
+}
+
+h1 {
+	font-family: 'Arial Black', sans-serif;
+	font-size: 16pt;
+	color: gray;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+#dataline {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: block;
+	padding: 15px;
+	background-color: $light-gray;
+	margin: 0px;
+	color: $dark-gray;
+}
+
+#reset-btn,
+#generate-btn,
+#copy-btn,
+#about-btn,
+#close-about-btn {
+	min-width: 80px;
+	cursor: pointer;
+}
+
+#paragraphs,
+#reset-btn,
+#generate-btn,
+#copy-btn,
+#about-btn,
+#close-about-btn {
+	display: inline-block;
+	padding: 5px;
+	margin-left: 0px;
+	font-size: 10pt;
+	font-weight: bold;
+	color: $dark-gray;
+}
+
+#temp-text {
+	display: none;
+}
+
+#app {
+	padding: 0px 15px 15px 15px;
+	margin-top: 80px;
+}
+
+#app>p {
+	font-family: 'Scope One', Times, serif;
+	font-size: 12pt;
+}
+
+.par {
+	margin-top: 20px;
+	text-align: justify;
+}
+
+.rounded {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.about {
+	display: none;
+	position: fixed;
+	padding: 0px;
+	width: 240px;
+	height: 160px;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -120px;
+	background: transparent;
+	z-index: 100;
+	text-align: center;
+
+	&:after {
+		position: fixed;
+		content: '';
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: $light-gray;
+		z-index: -2;
+	}
+	
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: white;
+		z-index: -1;
+	}
+}
+
+#about-title {
+	width: 100%;
+	padding: 10px;
+	background-color: orangered;
+	color: white;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+#about-info {
+	padding: 25px;
+}
+
+#about-version,
+#about-email {
+	display: inline-block;
+}
