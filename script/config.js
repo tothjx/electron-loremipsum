@@ -8,6 +8,7 @@ module.exports = {
 	/* window */
 	WIN_TITLE: 'Lorem ipsum generator',
 	WIN_ICON: './img/icon.ico',
+	TRAY_ICON: './img/tray.ico',
 	WIN_WIDTH: 800,
 	WIN_HEIGHT: 600,
 	WIN_MIN_WIDTH: 800,
