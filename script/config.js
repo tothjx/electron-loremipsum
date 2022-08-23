@@ -3,7 +3,7 @@ module.exports = {
 	ENV: 'dev', /* dev | prod */
 	AUTHOR: 'tothj',
 	EMAIL: 'tothj@tothj.com',
-	VERSION: '1.0.1',
+	VERSION: '1.0.2',
 	
 	/* window */
 	WIN_TITLE: 'Lorem ipsum generator',

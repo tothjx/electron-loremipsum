@@ -1,7 +1,7 @@
 {
 	"name": "li-gen",
 	"productName": "Lorem ipsum generator",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "another lorem ipsum generator",
 	"main": "main.js",
 	"scripts": {
